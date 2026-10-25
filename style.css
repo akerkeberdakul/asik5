@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  background: #F4F3F1;
+  color: #434d20;
+}
+h1 { font-size: 28px; font-family: Luminari, fantasy; }
+h2 { font-size: 22px; font-family: Luminari, fantasy; margin-top: 0; }
+p, label, li, button, input { font-family: Luminari, fantasy; }
+
+main { max-width: 600px; margin: 0 auto; padding: 16px; }
+
+h1 {
+  background: #e9839D;
+  color: #ffffff;
+  text-align: center;
+  padding: 12px;
+  margin: 0 0 16px;
+}
+
+section {
+  padding: 16px;
+  margin-bottom: 16px;
+  background: #F1CFE1;
+  border-radius: 8px;
+}
+
+label { display: block; margin-top: 10px; font-weight: bold; }
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  margin-top: 4px;
+  border: 2px solid #9FA881;
+  border-radius: 6px;
+  background: #F4F3F1;
+  color: #434d20;
+  font-size: inherit;
+}
+
+button {
+  margin-top: 12px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #9FA881;
+  color: #F4F3F1;
+  font-size: inherit;
+  cursor: pointer;
+}
+button:hover { background: #434d20; }
+#remove-btn { background: #e9839D; }
+#remove-btn:hover { background: #434d20; }
+
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-end; }
+.row input { flex: 1 1 160px; width: auto; }
+
+#form-msg { min-height: 1.4em; margin: 8px 0 0; }
+

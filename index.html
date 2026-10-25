@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment 5 – Profile &amp; DOM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>My Profile</h1>
+
+    <section id="profile-card">
+      <h2 id="p-name"></h2>
+      <p>Age: <strong id="p-age"></strong> years</p>
+      <p>Months old: <strong id="p-months"></strong></p>
+      <p>Developer: <strong id="p-dev"></strong></p>
+      <p>Hobbies count: <strong id="p-count"></strong></p>
+    </section>
+
+    <section>
+      <h2>Create / update profile</h2>
+      <form id="profile-form">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Your name" required>
+        <label for="birthYear">Birth year</label>
+        <input type="number" id="birthYear" placeholder="2005" min="1900" required>
+        <button type="submit">Create / Update Profile</button>
+      </form>
+      <p id="form-msg" role="alert"></p>
+    </section>
+
+    <section>
+      <h2>My hobbies</h2>
+      <ul id="hobby-list"></ul>
+      <div class="row">
+        <input type="text" id="new-item" placeholder="New hobby or task">
+        <button id="add-btn" type="button">Add Item</button>
+        <button id="remove-btn" type="button">Remove Item</button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
